@@ -1,0 +1,120 @@
+body {
+    font-family: helvetica;
+    font-size: 18px;
+  }
+  
+  header {
+    font-weight: bold;
+  }
+  
+  #title {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  
+  nav {
+    font-size: 25px;
+  }
+  
+  nav header {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    height: 40px;
+    line-height: 40px;
+  }
+  
+  section header {
+    font-size: 40px;
+  }
+  
+  #navbar {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    border-top: solid;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    overflow-y: auto;
+    height: 100%;
+  }
+  
+  #content {
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 40px;
+  }
+  
+  .nav-link {
+    display: block;
+    height: 40px;
+  }
+  
+  section {
+    margin-bottom: 55px;
+  }
+  
+  code {
+    background-color: lightgray;
+  }
+  
+  .block {
+    display: block;
+    background-color: lightgray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .element {
+    color: red;
+  }
+  
+  .doc {
+    color: #696969;
+  }
+  
+  .attribute {
+    color: green;
+  }
+  
+  .value {
+    color: blue;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #MDN {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 1400px) {
+    #navbar {
+      position: relative;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 100px;
+      margin-left: 100px;
+      margin-right: 100px;
+      height: 300px;
+    }
+    
+    #content {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+  }
