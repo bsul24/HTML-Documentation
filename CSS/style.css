@@ -2,64 +2,106 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Inter", sans-serif;
+html {
+  scroll-behavior: smooth;
 }
 
-#title {
-  font-size: 50px;
-  margin-bottom: 50px;
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  width: 95%;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+h1,
+h2,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 nav {
-  font-size: 25px;
+  font-size: 1.25rem;
 }
 
-nav header {
-  margin-bottom: 30px;
-  font-size: 30px;
-}
+/* Nav */
 
-a {
-  text-decoration: none;
-  color: black;
-  height: 40px;
-  line-height: 40px;
-}
-
-section header {
-  font-size: 40px;
-}
-
-#navbar {
-  position: fixed;
-  left: 0;
-  top: 50px;
-  border-top: solid;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 15px;
-  padding-top: 20px;
+.nav-list {
+  list-style: none;
+  max-height: 275px;
   overflow-y: auto;
-  height: 100%;
+  padding: 0;
+  margin: 3em 0;
+  border-left: solid black;
+  border-top: solid black;
+  border-bottom: solid black;
 }
 
-#content {
-  margin-left: 30vw;
-  margin-right: 30vw;
-  margin-top: 40px;
+.nav-list li {
+  border-bottom: 1px solid black;
 }
 
 .nav-link {
   display: block;
-  height: 40px;
+  padding: 0.5em 0 0.5em 1em;
+  text-decoration: none;
+  color: black;
+}
+
+/* Main */
+
+header {
+  margin-bottom: 2em;
 }
 
 section {
-  margin-bottom: 55px;
+  line-height: 1.5rem;
+  margin-bottom: 2em;
+  /* padding-bottom: 2em; */
+  border-bottom: 1px solid black;
 }
+
+section:last-child {
+  margin-bottom: 3em;
+  border: none;
+}
+
+main h2 {
+  margin-bottom: 1em;
+}
+
+p,
+code,
+ul,
+ol,
+img {
+  margin-bottom: 2em;
+}
+
+/* section ul {
+  margin: 2em 0;
+} */
 
 code {
   background-color: lightgray;
@@ -68,10 +110,8 @@ code {
 .block {
   display: block;
   background-color: lightgray;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 2em 0 2em 1em;
+  /* margin: 2em 0; */
 }
 
 .element {
@@ -90,32 +130,15 @@ code {
   color: blue;
 }
 
-li {
+section li {
   margin-bottom: 10px;
+  display: list-item;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+section li:last-child {
+  margin-bottom: 0;
 }
 
 #MDN {
   text-decoration: underline;
-}
-
-@media (max-width: 1400px) {
-  #navbar {
-    position: relative;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    height: 300px;
-  }
-
-  #content {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
 }
